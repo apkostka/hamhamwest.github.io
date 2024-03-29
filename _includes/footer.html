@@ -1,0 +1,11 @@
+<div class="">
+  <div class="container flex flex-col justify-between py-6 sm:flex-row">
+     <p class="text-center font-body text-white md:text-left">
+        © Copyright {{ site.time | date: '%Y' }}. All right reserved, Andrew P. Kostka.<br />
+        {{ site.credits }}
+     </p>
+     <div class="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
+      {% include social-links.html color="white" hover="yellow" %}
+     </div>
+  </div>
+</div>

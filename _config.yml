@@ -1,0 +1,38 @@
+url: 'https://hamhamwest.com'
+domain: hamhamwest
+baseurl: ''
+title: 'Sam West'
+email: apkostka@gmail.com
+description: "Andrew P Kostka is a freelance Software Develoepr, speciailizing in front-end and full-stack web development using Angular, Laravel, React, Node, and more."
+keywords: "software web developer freelance engineer programmer angular laravel javascript php html css"
+skills: "Web Developer - User Experience Designer"
+meta_author: Kostka Andrew
+
+plugins:
+  - jekyll-postcss
+
+postcss:
+  cache: false
+
+exclude:
+  - package.json
+  - pnpm-lock.yaml
+  - postcss.config.js
+  - tailwind.config.js
+  - apkostka.com.code-workspace
+  - atom-v2.0.0
+
+# Content config
+
+social:
+  - title: github
+    url: https://github.com/apkostka
+  - title: linkedin
+    url: https://www.linkedin.com/in/andrew-p-kostka
+  - title: stack-overflow
+    url: https://stackoverflow.com/users/1689951/apkostka
+
+address:
+  - line: Portland, OR
+
+credits: 'Built using the <a href="https://redpixelthemes.com/templates/atom/" target="_blank" class="font-bold">ATOM theme</a> for <a href="https://tailwindcss.com/" target="_blank" class="font-bold">Tailwind CSS</a>.'
