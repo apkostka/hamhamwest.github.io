@@ -12,8 +12,8 @@ module.exports = {
   safelist: ["active"],
   theme: {
     fontFamily: {
-      header: ["Raleway", "sans-serif"],
-      body: ["Open Sans", "sans-serif"],
+      header: ["Lora", "sans-serif"],
+      body: ["Lora", "sans-serif"],
     },
 
     screens: {
@@ -32,7 +32,7 @@ module.exports = {
       secondary: "#2a9d8f",
       white: "#ffffff",
       black: "#000000",
-      yellow: "#e9c46a",
+      yellow: "#c7af3f",
       lila: "#f4a261",
       "grey-10": "#6c6b6d",
       "grey-20": "#7c7c7c",

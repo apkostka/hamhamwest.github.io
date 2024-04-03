@@ -8,6 +8,12 @@ keywords: "software web developer freelance engineer programmer angular laravel 
 skills: "Web Developer - User Experience Designer"
 meta_author: Kostka Andrew
 
+defaults:
+  - scope:
+      path: "assets/img/list-images"
+    values:
+      list: true
+
 plugins:
   - jekyll-postcss
 

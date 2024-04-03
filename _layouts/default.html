@@ -8,12 +8,20 @@ title: Home
 
   <body
     :class="{ 'overflow-hidden max-h-screen': mobileMenu }"
-    class="relative bg-gradient-to-b to-rose-from from-darkblue-to bg-center bg-auto h-screen overflow-hidden text-white"
+    class="relative bg-gradient-to-b to-rose-from from-darkblue-to bg-center bg-auto text-white"
     x-data="{ mobileMenu: false }"
   >
     <div id="main" class="relative">
       <div
-        x-data=""
+      x-data="{
+        triggerNavItem(id) {
+            $scroll(id)
+        },
+        triggerMobileNavItem(id) {
+            mobileMenu = false;
+            this.triggerNavItem(id)
+        }
+    }"
       >
       <div class="relative bg-cover bg-center bg-no-repeat">
         {% include header.html %}
@@ -23,7 +31,7 @@ title: Home
       </div>
     </div>
 
-    <script src="/assets/js/main.js"></script>
-
   </body>
+
+  <script src="/assets/js/main.js" type="module"></script>
 </html>
