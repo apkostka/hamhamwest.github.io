@@ -1,11 +1,10 @@
 url: 'https://hamhamwest.com'
 domain: hamhamwest
 baseurl: ''
-title: 'Sam West'
+title: 'Ham Ham West'
 email: apkostka@gmail.com
-description: "Andrew P Kostka is a freelance Software Develoepr, speciailizing in front-end and full-stack web development using Angular, Laravel, React, Node, and more."
-keywords: "software web developer freelance engineer programmer angular laravel javascript php html css"
-skills: "Web Developer - User Experience Designer"
+description: "Ham Ham West is an artist, illustrator, and graphic designer from Seattle, Washington"
+keywords: "artist illustrator designer graphic freelance art"
 meta_author: Kostka Andrew
 
 defaults:
@@ -25,20 +24,5 @@ exclude:
   - pnpm-lock.yaml
   - postcss.config.js
   - tailwind.config.js
-  - apkostka.com.code-workspace
+  - hamhamwest.com.code-workspace
   - atom-v2.0.0
-
-# Content config
-
-social:
-  - title: github
-    url: https://github.com/apkostka
-  - title: linkedin
-    url: https://www.linkedin.com/in/andrew-p-kostka
-  - title: stack-overflow
-    url: https://stackoverflow.com/users/1689951/apkostka
-
-address:
-  - line: Portland, OR
-
-credits: 'Built using the <a href="https://redpixelthemes.com/templates/atom/" target="_blank" class="font-bold">ATOM theme</a> for <a href="https://tailwindcss.com/" target="_blank" class="font-bold">Tailwind CSS</a>.'
