@@ -7,7 +7,8 @@
     "css": "postcss assets/styles/main.css -o assets/styles/main.min.css --verbose",
     "server-reload": "bundle exec jekyll serve --livereload",
     "develop": "concurrently 'npm:css -- --watch' 'npm:server-reload'",
-    "build": "npm run css -- --env 'production' && rm -rf _site/_jampack && jampack ./_site",
+    "build": "npm run css -- --env 'production'",
+    "jampack": "rm -rf _site/_jampack && jampack ./_site",
     "format": "npx prettier ./**/*.{html,md}"
   },
   "browserslist": [
