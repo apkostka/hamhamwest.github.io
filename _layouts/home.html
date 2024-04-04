@@ -29,8 +29,11 @@ layout: default
     {% if myimage.path contains page_slug %}
       <a 
         href="{{ myimage.path | relative_url }}"
-        class="w-full h-48 bg-cover bg-center bg-no-repeat"
-        style="background-image: url({{ myimage.path | relative_url }})">
+        class="w-full h-48 bg-cover bg-center bg-no-repeat">
+        <img 
+          src="{{ myimage.path | relative_url }}"
+          class="w-full h-full object-cover"
+          alt="{{ myimage.name }}" />
       </a>
     {% endif %}
     {% endfor %}

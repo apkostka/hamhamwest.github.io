@@ -65,6 +65,8 @@ html{font-family:Lora, sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-fo
 
 .h-48{height:12rem}
 
+.h-full{height:100%}
+
 .h-screen{height:100vh}
 
 .max-h-screen{max-height:100vh}
