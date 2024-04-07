@@ -266,6 +266,8 @@ html{font-family:Lora, sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-fo
 
 .text-5xl{font-size:3rem;line-height:1}
 
+.uppercase{text-transform:uppercase}
+
 .leading-loose{line-height:2}
 
 .text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}
@@ -300,4 +302,4 @@ html{font-family:Lora, sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-fo
 
 @media (min-width: 1024px){.lg\:-top-116{top:-29rem}.lg\:-top-204{top:-51rem}.lg\:-top-40{top:-10rem}.lg\:block{display:block}.lg\:hidden{display:none}.lg\:w-64{width:16rem}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}
 
-@media (min-width: 1280px){.xl\:-top-116{top:-29rem}.xl\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.xl\:text-5xl{font-size:3rem;line-height:1}.xl\:text-8xl{font-size:6rem;line-height:1}}
+@media (min-width: 1280px){.xl\:-top-116{top:-29rem}.xl\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.xl\:text-4xl{font-size:2.25rem;line-height:2.5rem}.xl\:text-5xl{font-size:3rem;line-height:1}.xl\:text-8xl{font-size:6rem;line-height:1}}

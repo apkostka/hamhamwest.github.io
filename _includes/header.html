@@ -6,7 +6,7 @@
       </a>
     </div>
     <div class="hidden lg:block pt-20">
-      <ul class="flex items-center content-center font-header text-yellow text-2xl md:text-3xl xl:text-5xl">
+      <ul class="flex items-center content-center font-header text-yellow uppercase text-2xl md:text-3xl xl:text-4xl">
         {% assign sorted_pages = site.html_pages | sort: 'order' %}
         {% for page in sorted_pages %}
         {% if page.title != "Home" %}
@@ -42,14 +42,14 @@
       >
    <img src="/assets/img/icons/icon-close.svg" class="h-10 w-auto text-yellow" alt="" />
    </button>
-   <ul class="mt-20 flex flex-col font-header text-yellow text-right shadow-sm text-3xl xl:text-5xl">
+   <ul class="mt-20 flex flex-col font-header text-yellow text-right shadow-sm text-3xl xl:text-4xl">
     {% assign sorted_pages = site.html_pages | sort: 'order' %}
     {% for page in sorted_pages %}
     {% if page.title != "Home" %}
     <li class="group leading-loose hover:text-rose">
       <a
         href="{{ page.url }}"
-        class="cursor-pointer"
+        class="cursor-pointer uppercase"
         alt="{{page.title}}"
         >{{page.title}}</a>
     </li>
