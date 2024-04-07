@@ -12,26 +12,12 @@ title: Home
     x-data="{ mobileMenu: false }"
   >
     <div id="main" class="relative">
-      <div
-      x-data="{
-        triggerNavItem(id) {
-            $scroll(id)
-        },
-        triggerMobileNavItem(id) {
-            mobileMenu = false;
-            this.triggerNavItem(id)
-        }
-    }"
-      >
       <div class="relative bg-cover bg-center bg-no-repeat">
         {% include header.html %}
         {{ content }}
         <!--{% include footer.html %}-->
       </div>
-      </div>
     </div>
 
   </body>
-
-  <script src="/assets/js/main.js" type="module"></script>
 </html>

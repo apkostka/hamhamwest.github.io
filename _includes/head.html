@@ -38,20 +38,22 @@
   <meta property="og:image" content="//assets/img/social.jpg" />
 
   <link
+    defer
     crossorigin="crossorigin"
     href="https://fonts.gstatic.com"
     rel="preconnect"
   />
 
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+  <link defer href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
   <link
+    defer
     href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
     rel="stylesheet"
   />
 
   <link
+    defer
     crossorigin="anonymous"
     href="{{ "/assets/styles/main.min.css" | relative_url }}"
     media="screen"
@@ -68,8 +70,8 @@
 </head>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7HZXVNHYY2"></script>
-<script>
+<script defer async src="https://www.googletagmanager.com/gtag/js?id=G-7HZXVNHYY2"></script>
+<script defer>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
