@@ -3,41 +3,25 @@ layout: default
 ---
 
 <div id="page-content" class="container max-w-screen-lg mx-auto items-center p-0">
+  <div class="bg-white p-10 mb-10">
+    <article class="prose lg:prose-xl">
+
+      <h2>¡Hola!</h2>
+
+      <p>
+        I'm a Seattle art teacher specializing in digital illustration.<br />
+        For commissions and inquiries email: <a href="mailto:samuel.elton.kostka@gmail.com">SAMUEL.ELTON.KOSTKA@GMAIL.COM</a>
+      </p>
+
+    </article>
+  </div>
+
   {% assign sorted_pages = site.html_pages | sort: 'order' %}
   {% for page in sorted_pages %}
   {% if page.title != "Home" %}
-  <div
-    id="{{page.title | slugify}}-section"
-    class="h-160 bg-fixed bg-center bg-cover bg-no-repeat relative overflow-hidden"
-    style="background-image: url(/assets/img/backgrounds/background.png)"
-  >
-      <img
-          id="{{page.title | slugify}}-bg"
-          src="/assets/img/backgrounds/{{page.title | slugify}}.png"
-          class="w-full min-h-screen object-cover scroller absolute {{page.bg-position}}" 
-          alt="hero image" 
-      />
-
-      <div class="bg-black py-10 bg-opacity-70 absolute bottom-0 w-full">
-        <img src="/assets/img/icons/{{page.title | slugify}}.png" class="w-auto mx-auto" alt="logo" />
-      </div>
-  </div>
-  <div class="bg-white grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-4 p-10 mb-10">
-    {% assign page_slug = page.title | slugify %}
-    {% assign image_files = site.static_files | where: "list", true %}
-    {% for myimage in image_files %}
-    {% if myimage.path contains page_slug %}
-      <a 
-        href="{{ myimage.path | relative_url }}"
-        class="w-full h-48 bg-cover bg-center bg-no-repeat">
-        <img 
-          src="{{ myimage.path | relative_url }}"
-          class="w-full h-full object-cover"
-          alt="{{ myimage.name }}" />
-      </a>
-    {% endif %}
-    {% endfor %}
-  </div>
+  <a href="{{page.url}}" class="group hover:text-rose">
+    {% include hero.html page=page height="40" %}
+  </a>
   {% endif %}
   {% endfor %}
 </div>

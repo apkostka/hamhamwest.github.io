@@ -12,7 +12,7 @@ module.exports = {
   safelist: ["active"],
   theme: {
     fontFamily: {
-      header: ["Lora", "sans-serif"],
+      header: ["lydian", "sans-serif"],
       body: ["Lora", "sans-serif"],
     },
 
@@ -22,17 +22,17 @@ module.exports = {
     },
 
     colors: {
-      "rose":"DA086D",
-      "lightblue":"018FFE",
-      "darkblue":"413AE4",
-      "grape":"7A3FB7",
-      "fandango":"BA3589",
+      "rose":"#DA086D",
+      "lightblue":"#018FFE",
+      "darkblue":"#413AE4",
+      "grape":"#7A3FB7",
+      "fandango":"#BA3589",
       transparent: "transparent",
       primary: "#264653",
       secondary: "#2a9d8f",
       white: "#ffffff",
       black: "#000000",
-      yellow: "#c7af3f",
+      yellow: "#dec13a",
       lila: "#f4a261",
       "grey-10": "#6c6b6d",
       "grey-20": "#7c7c7c",
@@ -107,6 +107,12 @@ module.exports = {
       inset: {
         "2/5": "40%",
       },
+      transitionDuration: {
+        '2000': '2000ms',
+        '3000': '3000ms',
+        '4000': '4000ms',
+        '5000': '5000ms',
+      }
     },
   },
   plugins: [

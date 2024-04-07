@@ -6,6 +6,7 @@ email: apkostka@gmail.com
 description: "Ham Ham West is an artist, illustrator, and graphic designer from Seattle, Washington"
 keywords: "artist illustrator designer graphic freelance art"
 meta_author: Kostka Andrew
+permalink: /:categories/:title
 
 defaults:
   - scope:

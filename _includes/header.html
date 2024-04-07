@@ -6,26 +6,22 @@
       </a>
     </div>
     <div class="hidden lg:block pt-16">
-      <ul class="flex items-center content-center">
+      <ul class="flex items-center content-center font-header text-yellow text-2xl md:text-3xl xl:text-5xl">
         {% assign sorted_pages = site.html_pages | sort: 'order' %}
         {% for page in sorted_pages %}
         {% if page.title != "Home" %}
-        <li class="group pl-6">
+        <li class="group ml-10 hover:text-rose">
           <a
-            @click="triggerNavItem('#{{page.title | slugify}}-section')"
-            class="cursor-pointer pt-0.5 font-header font-semibold text-2xl uppercase text-yellow"
-            >
-            <img src="/assets/img/icons/{{page.title | slugify}}.png" class="w-auto mx-auto" alt="{{page.title}}" />
-          </a>
-          <span
-            class="block h-0.5 w-full bg-transparent group-hover:bg-yellowtext-yellow"
-          ></span>
+            href="{{ page.url }}"
+            class="cursor-pointer"
+            alt="{{page.title}}"
+            >{{page.title}}</a>
         </li>
         {% endif %}
         {% endfor %}
       </ul>
     </div>
-    <div class="lg:hidden absolute right-10 top-20">
+    <div class="lg:hidden absolute right-10 top-1/3">
         <button @click="mobileMenu = true">
         <i class="bx bx-menu text-4xl text-yellow"></i>
         </button>
@@ -37,7 +33,7 @@
   :class="{ 'opacity-100 pointer-events-auto': mobileMenu }"
 >
 <div
-   class="absolute right-0 min-h-screen w-2/3 py-4 px-8 shadow md:w-1/3"
+   class="absolute right-0 min-h-screen py-4 px-8 shadow"
    >
    <button
       class="absolute top-0 right-0 mt-8 mr-6"
@@ -45,17 +41,16 @@
       >
    <img src="/assets/img/icons/icon-close.svg" class="h-10 w-auto text-yellow" alt="" />
    </button>
-   <ul class="mt-20 flex flex-col">
+   <ul class="mt-20 flex flex-col font-header text-yellow text-right shadow-sm text-3xl xl:text-5xl">
     {% assign sorted_pages = site.html_pages | sort: 'order' %}
     {% for page in sorted_pages %}
     {% if page.title != "Home" %}
-    <li class="py-2 text-right">
+    <li class="group leading-loose hover:text-rose">
       <a
-        @click="triggerMobileNavItem('#{{page.title | slugify}}-section')"
-        class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-yellow"
-        >
-        <img src="/assets/img/icons/{{page.title | slugify}}.png" class="w-auto mx-auto" alt="{{page.title}}" />
-      </a>
+        href="{{ page.url }}"
+        class="cursor-pointer"
+        alt="{{page.title}}"
+        >{{page.title}}</a>
     </li>
     {% endif %}
     {% endfor %}
