@@ -13,8 +13,9 @@ layout: default
 
   </article>
 
+  {% if page.img-dir %}
+  <hr class="block h-1 w-full border-black my-10" />
   <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-4 mb-10">
-    {% if page.img-dir %}
       {% assign image_files = site.static_files | where: "list", true %}
       {% for image in image_files %}
         {% if image.path contains page.img-dir %}
@@ -28,7 +29,7 @@ layout: default
           </a>
         {% endif %}
       {% endfor %}
-    {% endif %}
   </div>
+  {% endif %}
 
 </div>
