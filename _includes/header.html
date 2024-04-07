@@ -22,7 +22,7 @@
       </ul>
     </div>
     <div class="lg:hidden absolute right-10 top-1/3">
-        <button @click="mobileMenu = true">
+        <button @click="mobileMenu = true" aria-label="Menu">
         <i class="bx bx-menu text-4xl text-yellow"></i>
         </button>
     </div>
@@ -37,6 +37,7 @@
    >
    <button
       class="absolute top-0 right-0 mt-8 mr-6"
+      aria-label="Close Menu"
       @click="mobileMenu = false"
       >
    <img src="/assets/img/icons/icon-close.svg" class="h-10 w-auto text-yellow" alt="" />
