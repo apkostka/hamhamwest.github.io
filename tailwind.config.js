@@ -112,6 +112,7 @@ module.exports = {
         '3000': '3000ms',
         '4000': '4000ms',
         '5000': '5000ms',
+        '10000': '10000ms',
       },
       backgroundImage: {
         'footer-banner': "url('/assets/img/backgrounds/banner_bg.png')",
