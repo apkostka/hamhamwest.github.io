@@ -237,6 +237,8 @@ html{font-family:Lora, sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-fo
 
 .bg-gradient-to-b{background-image:-webkit-gradient(linear, left top, left bottom, from(var(--tw-gradient-stops)));background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}
 
+.bg-hero-bg{background-image:url('/assets/img/backgrounds/background.png.webp')}
+
 .from-darkblue-to{--tw-gradient-from:rgba(65,58,228, 0.93) var(--tw-gradient-from-position);--tw-gradient-to:rgba(65, 58, 228, 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}
 
 .to-rose-from{--tw-gradient-to:rgba(218,8,109, 0.95) var(--tw-gradient-to-position)}

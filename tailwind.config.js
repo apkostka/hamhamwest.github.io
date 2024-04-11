@@ -115,6 +115,7 @@ module.exports = {
         '10000': '10000ms',
       },
       backgroundImage: {
+        'hero-bg': "url('/assets/img/backgrounds/background.png.webp')",
         'footer-banner': "url('/assets/img/backgrounds/banner_bg.png')",
       }
     },
