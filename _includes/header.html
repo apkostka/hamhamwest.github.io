@@ -1,8 +1,8 @@
 <div class="relative w-full z-50 top-0 py-3 sm:py-5 ">
   <div class="container flex flex-col justify-between py-6 sm:flex-row">
-    <div>
+    <div class="w-full md:w-48 lg:w-64">
       <a href="/">
-        <img src="/assets/img/logos/logo2.png" class="max-w-64 w-full sm:w-full md:w-48 lg:w-64" alt="logo image" />
+        <img src="/assets/img/logos/logo2.png" class="w-full max-w-64 mx-auto" alt="logo image" />
       </a>
     </div>
     <div class="hidden lg:block pt-20">
@@ -21,7 +21,7 @@
         {% endfor %}
       </ul>
     </div>
-    <div class="lg:hidden absolute right-10 top-1/3">
+    <div class="lg:hidden absolute right-5 top-5 md:right-10 md:top-1/4">
         <button @click="mobileMenu = true" aria-label="Menu">
         <i class="bx bx-menu text-4xl text-yellow"></i>
         </button>
