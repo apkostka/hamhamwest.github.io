@@ -26,4 +26,9 @@ html {
   font-weight: bold;
 }
 
+.hero-bg {
+  @apply bg-gradient-to-b to-rose-from from-darkblue-to bg-fixed bg-center bg-cover bg-no-repeat;
+  background-image: url('/assets/img/backgrounds/background.png.webp'), url('/assets/img/backgrounds/background.png.jpg');
+}
+
 @tailwind utilities;

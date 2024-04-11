@@ -41,12 +41,8 @@ module.exports = {
       "grey-50": "#f4f3f8",
       "grey-60": "#edebf6",
       "grey-70": "#d8d8d8",
-      "hero-gradient-from": "rgba(38, 70, 83, 0.95)",
-      "hero-gradient-to": "rgba(33, 62, 74, 0.93)",
       "rose-from": "rgba(218,8,109, 0.95)",
       "darkblue-to": "rgba(65,58,228, 0.93)",
-      "blog-gradient-from": "#2a9d8f",
-      "blog-gradient-to": "#2a9d8f",
     },
 
     container: {
