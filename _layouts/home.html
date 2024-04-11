@@ -3,19 +3,6 @@ layout: default
 ---
 
 <div id="page-content" class="container max-w-screen-lg mx-auto items-center p-0">
-  <div class="bg-white p-10 mb-10">
-    <article class="prose lg:prose-xl">
-
-      <h2>¡Hola!</h2>
-
-      <p>
-        I'm a Seattle art teacher specializing in digital illustration.<br />
-        For commissions and inquiries email: <a href="mailto:samuel.elton.kostka@gmail.com">SAMUEL.ELTON.KOSTKA@GMAIL.COM</a>
-      </p>
-
-    </article>
-  </div>
-
   {% assign sorted_pages = site.html_pages | sort: 'order' %}
   {% for page in sorted_pages %}
   {% if page.title != "Home" %}
